@@ -1,11 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px auto;
+  max-width: 600px;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .heading h2 {
   font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .task_input {
@@ -14,18 +18,28 @@ body {
 
 input[type="text"] {
   padding: 10px;
-  width: 250px;
+  width: 60%;
   font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #add_btn {
   padding: 10px 20px;
   margin-left: 10px;
   font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.task_container {
+#add_btn:hover {
+  background-color: #218838;
+}
+
+.tasks {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -33,20 +47,28 @@ input[type="text"] {
 }
 
 .task_item {
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
   padding: 10px 15px;
-  margin: 5px;
-  width: 300px;
+  margin: 5px 0;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 .delete_btn {
-  background: red;
+  background-color: #dc3545;
   color: white;
   border: none;
   padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 3px;
   cursor: pointer;
+}
+
+.delete_btn:hover {
+  background-color: #c82333;
 }
